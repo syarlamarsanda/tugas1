@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- absolute: elemen keluar dari alur normal (tempatnya tidak dipesan lagi)
+- posisinya dihitung dari induk terdekat yang punya position (selain static)
+- kalau tidak ada, dihitung dari halaman
+- biasanya induknya dikasih position: relative
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absolute</title>
+  <style>
+.box { width: 100px; height: 100px; color: white; font-family: Arial; padding: 5px; box-sizing: border-box; }
+.merah { background-color: crimson; }
+.biru { background-color: royalblue; }
+.hijau { background-color: seagreen; }
+.induk {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed gray;
+  margin: 50px;
+}
+.biru {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+  </style>
+</head>
+<body>
+<div class="induk">
+  Ini induk (position: relative)
+  <div class="box biru">absolute</div>
+</div>
+</body>
+</html>

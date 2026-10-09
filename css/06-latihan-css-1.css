@@ -1,0 +1,38 @@
+/* selector tag */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* selector class */
+.judul {
+  color: teal;
+}
+
+.info {
+  font-size: 12px;
+  color: gray;
+}
+
+.pengumum {
+  color: darkorange;
+}
+
+.tanggal {
+  color: purple;
+}
+
+
+.judul.penting {
+  color: red;
+}
+
+/* selector id */
+#info-1 {
+  text-decoration: underline;
+}
+
+/* span di dalam p */
+p span {
+  font-weight: bold;
+  color: darkblue;
+}

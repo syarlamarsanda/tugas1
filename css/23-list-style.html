@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- list-style-type  : disc / circle / square / decimal / upper-roman / none
+- list-style-image : url(gambar)
+- none + li display inline = awal bikin menu navigasi
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>List Style</title>
+  <style>
+ul { list-style-type: square; }
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+.menu li {
+  display: inline;
+  margin-right: 16px;
+}
+  </style>
+</head>
+<body>
+<ul>
+  <li>Apel</li>
+  <li>Jeruk</li>
+</ul>
+<ul class="menu">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+</body>
+</html>

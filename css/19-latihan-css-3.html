@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan CSS 3</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+}
+.kartu {
+  width: 320px;
+  background-color: white;
+  border: 2px solid navy;
+  border-radius: 12px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.kartu-header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.foto {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 100px;
+  margin: 15px;
+  border: 2px dashed gray;
+  text-align: center;
+  line-height: 100px;
+  color: gray;
+  font-size: 12px;
+}
+.data {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
+  font-size: 13px;
+}
+.data p {
+  margin: 6px 0;
+}
+.kartu-footer {
+  background-color: gold;
+  padding: 5px;
+  text-align: center;
+  font-size: 11px;
+}
+.catatan {
+  width: 250px;
+  height: 60px;
+  overflow: auto;
+  margin: auto;
+  padding: 10px;
+  background-color: lightyellow;
+  border: 1px solid orange;
+}
+  </style>
+</head>
+<body>
+<div class="kartu">
+  <div class="kartu-header">KARTU PELAJAR</div>
+  <div class="foto">FOTO</div>
+  <div class="data">
+    <p><b>Nama</b> : Budi Santoso</p>
+    <p><b>Kelas</b> : XI RPL 1</p>
+    <p><b>Eskul</b> : Coding</p>
+  </div>
+  <div class="kartu-footer">Berlaku sampai 2027</div>
+</div>
+
+<div class="catatan">
+  Kotak ini lebarnya cuma 250px dan tingginya 60px, tapi tulisannya panjang.
+  Karena pakai overflow: auto, muncul scrollbar di dalam kotak. Coba ganti jadi hidden.
+</div>
+</body>
+</html>

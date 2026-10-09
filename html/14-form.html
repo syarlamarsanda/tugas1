@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- <form> : wadah formulir
+- <input type="text">     : teks biasa
+- <input type="password"> : kata sandi (hurufnya disembunyikan)
+- <input type="radio">    : pilih satu (name-nya harus sama)
+- <input type="checkbox"> : boleh pilih lebih dari satu
+- <select> + <option>     : dropdown
+- <textarea>              : teks panjang
+- <input type="submit">   : tombol kirim
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+<form>
+  Nama: <input type="text"><br><br>
+  Password: <input type="password"><br><br>
+  Jenis kelamin:
+  <input type="radio" name="jk"> Laki-laki
+  <input type="radio" name="jk"> Perempuan<br><br>
+  Hobi:
+  <input type="checkbox"> Membaca
+  <input type="checkbox"> Musik<br><br>
+  Kelas:
+  <select>
+    <option>X</option>
+    <option>XI</option>
+    <option>XII</option>
+  </select><br><br>
+  Pesan:<br>
+  <textarea rows="4" cols="30"></textarea><br><br>
+  <input type="submit" value="Kirim">
+</form>
+</body>
+</html>

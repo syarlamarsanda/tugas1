@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan</title>
+</head>
+<body>
+<h1>
+  <img src="logo-warung.png" alt="Logo Warung Bu Siti" width="60" align="middle">
+  Warung Makan Bu Siti
+</h1>
+<hr>
+<h4>Menu Website :</h4>
+<ul>
+  <li><a href="19-latihan-html-3.html">Beranda</a></li>
+  <li><a href="20-latihan-html-4.html">Daftar Menu</a></li>
+  <li><a href="20-pesan.html">Pesan</a></li>
+</ul>
+<hr>
+
+<h1>Pesan Makanan</h1>
+<form>
+  <label for="nama">Nama :</label><br>
+  <input type="text" id="nama" name="nama"><br><br>
+
+  <label for="menu">Pilih menu :</label><br>
+  <select id="menu" name="menu">
+    <option>Nasi Goreng Spesial</option>
+    <option>Soto Ayam</option>
+    <option>Es Teh Manis</option>
+  </select><br><br>
+
+  Ambil di :<br>
+  <input type="radio" name="ambil" id="warung"> <label for="warung">Warung</label>
+  <input type="radio" name="ambil" id="antar"> <label for="antar">Diantar</label><br><br>
+
+  Tambahan :<br>
+  <input type="checkbox" id="kerupuk"> <label for="kerupuk">Kerupuk</label>
+  <input type="checkbox" id="telur"> <label for="telur">Telur</label><br><br>
+
+  <label for="catatan">Catatan :</label><br>
+  <textarea id="catatan" name="catatan" rows="4" cols="30"></textarea><br><br>
+
+  <input type="submit" value="Pesan">
+</form>
+</body>
+</html>

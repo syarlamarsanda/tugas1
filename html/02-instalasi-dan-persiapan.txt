@@ -1,0 +1,15 @@
+CATATAN MATERI 2: INSTALASI DAN PERSIAPAN
+
+Yang dipakai:
+- Browser: Google Chrome
+- Code editor: Visual Studio Code
+
+Extension VS Code:
+1. Live Server
+   Bikin server lokal, halaman otomatis refresh tiap file disimpan.
+   Cara pakai: klik kanan file .html > "Open with Live Server",
+   atau klik "Go Live" di pojok kanan bawah VS Code.
+2. Prettier
+   Merapikan kode otomatis.
+   Cara pakai: Shift + Alt + F (format dokumen),
+   atau aktifkan "Format On Save" di Settings biar rapi tiap disimpan.

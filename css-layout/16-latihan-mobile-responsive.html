@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+LATIHAN MOBILE RESPONSIVE LAYOUT: Mengenal Tata Surya (mobile first)
+- mobile first: CSS dasar ditulis buat HP dulu (semua kolom 100%, menu berjajar ke samping)
+- @media (min-width: 768px) -> layar besar: grid 12 kolom (3 - 6 - 3)
+- @media (min-width: 1100px) -> layar sangat besar: huruf sedikit lebih besar
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Mobile First</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1026;
+  color: #e8e8f0;
+  font-size: 14px;
+}
+.header {
+  background-color: #1c2250;
+  padding: 10px 15px;
+  border-bottom: 3px solid gold;
+}
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ===== HP (dasar) ===== */
+[class*="col-"] {
+  width: 100%;
+  padding: 15px;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+  background-color: gold;
+  color: #0b1026;
+  padding: 6px 10px;
+  margin: 0 4px 6px 0;
+  border-radius: 15px;
+  font-size: 12px;
+}
+.aside {
+  background-color: #1c2250;
+  border-radius: 8px;
+}
+.aside img {
+  width: 100%;
+  border-radius: 6px;
+}
+.footer {
+  background-color: #1c2250;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+/* ===== tablet & laptop ===== */
+@media (min-width: 768px) {
+  [class*="col-"] {
+    float: left;
+  }
+  .col-3 { width: 25%; }
+  .col-6 { width: 50%; }
+  .menu li {
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .aside {
+    margin-top: 15px;
+  }
+}
+
+/* ===== layar besar ===== */
+@media (min-width: 1100px) {
+  body {
+    font-size: 16px;
+  }
+}
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>Mengenal Tata Surya</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+      <li>Matahari</li>
+      <li>Planet Dalam</li>
+      <li>Planet Luar</li>
+      <li>Sabuk Asteroid</li>
+    </ul>
+  </div>
+
+  <div class="col-6 konten">
+    <h2>Matahari</h2>
+    <p>Matahari adalah bintang di pusat tata surya. Semua planet, termasuk Bumi, bergerak mengelilinginya.</p>
+    <p>Tata surya kita punya 8 planet: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan Neptunus.</p>
+    <p>Empat planet pertama disebut planet dalam karena dekat dengan Matahari dan permukaannya berbatu. Empat planet berikutnya disebut planet luar dan sebagian besar tersusun dari gas.</p>
+  </div>
+
+  <div class="col-3 aside">
+    <img src="tata-surya.jpg" alt="Ilustrasi tata surya">
+    <p>Fakta: satu hari di Venus lebih lama daripada satu tahunnya.</p>
+  </div>
+</div>
+
+<div class="footer">Belajar Astronomi &copy; 2025</div>
+</body>
+</html>

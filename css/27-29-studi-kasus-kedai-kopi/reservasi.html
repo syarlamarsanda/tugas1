@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kedai Kopi Pojok - Reservasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+  <img class="header-logo" src="logo-kedai.png" alt="Logo Kedai">
+  <a class="header-title" href="index.html">Kedai Kopi Pojok</a>
+</div>
+
+<ul class="nav">
+  <li class="nav-item"><a href="index.html">Beranda</a></li>
+  <li class="nav-item"><a href="menu.html">Menu</a></li>
+  <li class="nav-item"><a href="reservasi.html">Reservasi</a></li>
+</ul>
+
+<div class="konten">
+  <h1>Reservasi Meja</h1>
+  <form class="form">
+    <div class="form-group">
+      <label for="nama">Nama :</label>
+      <input type="text" id="nama" name="nama">
+    </div>
+    <div class="form-group">
+      <label for="jumlah">Jumlah orang :</label>
+      <select id="jumlah" name="jumlah">
+        <option>1 - 2 orang</option>
+        <option>3 - 4 orang</option>
+        <option>5 orang lebih</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="catatan">Catatan :</label>
+      <textarea id="catatan" name="catatan"></textarea>
+    </div>
+    <button type="submit">Kirim Reservasi</button>
+  </form>
+</div>
+
+<div class="footer">&copy; 2025 Kedai Kopi Pojok</div>
+</body>
+</html>

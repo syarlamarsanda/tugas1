@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- media query: aturan CSS yang cuma jalan di kondisi tertentu
+- @media (max-width: 600px) { ... } -> jalan kalau layar 600px ke bawah
+- bisa dipakai ubah layout, ukuran huruf, atau sembunyiin elemen
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+body { font-family: Arial; }
+.kotak {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  box-sizing: border-box;
+  color: white;
+}
+.a { background-color: crimson; }
+.b { background-color: steelblue; }
+.c { background-color: seagreen; }
+.info { clear: both; }
+
+@media (max-width: 600px) {
+  body { background-color: lightyellow; }
+  .kotak { width: 100%; }
+  .info::after { content: " (Sekarang layar kecil: kotak menumpuk, latar kuning)"; }
+}
+  </style>
+</head>
+<body>
+<div class="kotak a">Kotak 1</div>
+<div class="kotak b">Kotak 2</div>
+<div class="kotak c">Kotak 3</div>
+<p class="info">Layar lebar: kotak berjajar, latar putih.</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- input[type="text"] -> pilih input yang type-nya text aja
+- :focus -> saat input diklik / diisi
+- :hover -> saat kursor di atas tombol
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Style</title>
+  <style>
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+input:focus { border-color: blue; }
+button {
+  background-color: green;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+}
+button:hover { background-color: darkgreen; }
+  </style>
+</head>
+<body>
+<form>
+  <input type="text" placeholder="Nama"><br><br>
+  <button type="button">Kirim</button>
+</form>
+</body>
+</html>

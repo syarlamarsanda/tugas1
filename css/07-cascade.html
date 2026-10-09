@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+CATATAN (siapa yang menang kalau aturannya bentrok)
+1. !important paling kuat
+2. lebih spesifik menang: id > class > tag
+3. kalau sama kuat, yang ditulis paling bawah menang
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Cascade</title>
+  <style>
+p { color: red; }
+p { color: blue; }      /* menang, ditulis paling bawah */
+.teks { color: green; } /* class lebih kuat dari tag */
+  </style>
+</head>
+<body>
+<p>Paragraf biasa</p>
+<p class="teks">Paragraf dengan class teks</p>
+</body>
+</html>

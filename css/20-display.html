@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- block        : satu baris penuh (div, p, h1)
+- inline       : sejajar teks, width/height tidak ngaruh (span, a)
+- inline-block : sejajar, tapi width/height bisa diatur
+- none         : hilang total
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Display</title>
+  <style>
+span { display: block; }
+.tombol {
+  display: inline-block;
+  width: 100px;
+  background-color: lightblue;
+  text-align: center;
+}
+.rahasia { display: none; }
+  </style>
+</head>
+<body>
+<span>Span satu</span>
+<span>Span dua</span>
+<p>Klik <b class="tombol">Tombol</b> di sini</p>
+<p>Sebelum <i class="rahasia">TIDAK TERLIHAT</i> sesudah</p>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+LATIHAN MULTI KOLOM: Blog Resep Anak Kos
+Yang dipraktikkan: float untuk 2 kolom (konten kiri, sidebar kanan), clear di footer
+- link sidebar pakai href="#resep-1" -> lompat ke elemen dengan id resep-1
+- position: sticky di sidebar biar ikut turun waktu di-scroll
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Multi Kolom</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #fffaf0;
+}
+.header {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.header h1 {
+  margin: 0;
+}
+.header p {
+  margin: 5px 0 0;
+}
+.container {
+  width: 85%;
+  margin: 20px auto;
+}
+.kolom-konten {
+  float: left;
+  width: 68%;
+}
+.artikel {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+.artikel h2 {
+  color: tomato;
+  margin-top: 0;
+}
+.kolom-sidebar {
+  float: right;
+  width: 28%;
+  background-color: #ffe4c4;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 10px;
+}
+.kolom-sidebar a {
+  color: saddlebrown;
+}
+.footer {
+  clear: both;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>Dapur Anak Kos</h1>
+  <p>Resep gampang, bahan murah</p>
+</div>
+
+<div class="container">
+  <div class="kolom-konten">
+    <div class="artikel" id="resep-1">
+      <h2>Telur Dadar Kecap</h2>
+      <p>Kocok 2 butir telur dengan sedikit garam, goreng di wajan panas sampai pinggirnya kering, lalu siram kecap manis dan taburi bawang goreng. Cocok buat sarapan cepat sebelum berangkat sekolah.</p>
+      <p>Kocok 2 butir telur dengan sedikit garam, goreng di wajan panas sampai pinggirnya kering, lalu siram kecap manis dan taburi bawang goreng. Cocok buat sarapan cepat sebelum berangkat sekolah.</p>
+    </div>
+    <div class="artikel" id="resep-2">
+      <h2>Mie Goreng Sayur</h2>
+      <p>Rebus mie sampai setengah matang. Tumis bawang putih, masukkan sawi dan wortel, lalu masukkan mie dan bumbu. Aduk rata dan tambahkan telur orak-arik kalau suka.</p>
+      <p>Rebus mie sampai setengah matang. Tumis bawang putih, masukkan sawi dan wortel, lalu masukkan mie dan bumbu. Aduk rata dan tambahkan telur orak-arik kalau suka.</p>
+    </div>
+    <div class="artikel" id="resep-3">
+      <h2>Es Buah Segar</h2>
+      <p>Potong semangka, melon, dan nanas kecil-kecil. Masukkan ke gelas, tambahkan sirup merah, susu kental manis, dan es batu. Paling enak diminum siang hari.</p>
+      <p>Potong semangka, melon, dan nanas kecil-kecil. Masukkan ke gelas, tambahkan sirup merah, susu kental manis, dan es batu. Paling enak diminum siang hari.</p>
+    </div>
+  </div>
+
+  <div class="kolom-sidebar">
+    <h3>Daftar Resep</h3>
+    <ul>
+      <li><a href="#resep-1">Telur Dadar Kecap</a></li>
+      <li><a href="#resep-2">Mie Goreng Sayur</a></li>
+      <li><a href="#resep-3">Es Buah Segar</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">Dapur Anak Kos &copy; 2025</div>
+</div>
+</body>
+</html>

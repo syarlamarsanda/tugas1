@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- position ngatur cara elemen diletakkan di halaman
+- 5 nilai: static (bawaan), relative, absolute, fixed, sticky
+- digeser pakai top, right, bottom, left
+- static TIDAK bisa digeser pakai top/left
+COBA: kasih top: 50px ke .biru, tidak akan ngaruh karena masih static
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+.box { width: 100px; height: 100px; color: white; font-family: Arial; padding: 5px; box-sizing: border-box; }
+.merah { background-color: crimson; }
+.biru { background-color: royalblue; }
+.hijau { background-color: seagreen; }
+.biru { position: static; }
+  </style>
+</head>
+<body>
+<div class="box merah">static</div>
+<div class="box biru">static</div>
+<div class="box hijau">static</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- z-index ngatur siapa yang di atas kalau elemen saling tumpuk
+- angka lebih besar = tampil lebih atas
+- cuma jalan kalau elemennya punya position (selain static)
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index</title>
+  <style>
+.box { width: 100px; height: 100px; color: white; font-family: Arial; padding: 5px; box-sizing: border-box; }
+.merah { background-color: crimson; }
+.biru { background-color: royalblue; }
+.hijau { background-color: seagreen; }
+.box { position: absolute; width: 150px; height: 150px; }
+.merah { top: 20px; left: 20px; z-index: 3; }
+.biru { top: 70px; left: 70px; z-index: 2; }
+.hijau { top: 120px; left: 120px; z-index: 1; }
+  </style>
+</head>
+<body>
+<div class="box merah">z-index: 3</div>
+<div class="box biru">z-index: 2</div>
+<div class="box hijau">z-index: 1</div>
+</body>
+</html>

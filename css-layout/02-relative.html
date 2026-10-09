@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- relative: elemen digeser dari posisi aslinya
+- tempat aslinya tetap "dipesan", jadi elemen lain tidak ikut bergeser
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relative</title>
+  <style>
+.box { width: 100px; height: 100px; color: white; font-family: Arial; padding: 5px; box-sizing: border-box; }
+.merah { background-color: crimson; }
+.biru { background-color: royalblue; }
+.hijau { background-color: seagreen; }
+.biru {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+  </style>
+</head>
+<body>
+<div class="box merah">1</div>
+<div class="box biru">2 (relative)</div>
+<div class="box hijau">3</div>
+</body>
+</html>

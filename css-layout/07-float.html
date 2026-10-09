@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+CATATAN
+- float: left / right -> elemen melayang ke kiri/kanan, teks mengalir di sampingnya
+- dulu sering dipakai buat bikin kolom
+- clear: both -> menghentikan pengaruh float
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float</title>
+  <style>
+body { font-family: Arial; }
+.kiri {
+  float: left;
+  width: 200px;
+  margin-right: 15px;
+}
+.bersih {
+  clear: both;
+  background-color: lightyellow;
+}
+  </style>
+</head>
+<body>
+<img src="foto.jpg" alt="Foto" class="kiri">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi aut quas ut hic soluta, odit, doloremque maiores ducimus, qui nostrum. Nihil non praesentium cupiditate ratione natus eaque nobis incidunt.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi aut quas ut hic soluta, odit, doloremque maiores ducimus, qui nostrum. Nihil non praesentium cupiditate ratione natus eaque nobis incidunt.</p>
+<p class="bersih">Paragraf ini pakai clear: both, jadi turun ke bawah gambar.</p>
+</body>
+</html>

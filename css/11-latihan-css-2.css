@@ -1,0 +1,50 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #fdf6e3;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  background-color: darkslategray;
+  padding: 12px;
+}
+
+.judul {
+  background-color: white;
+  border-left: 8px solid teal;
+  padding: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.judul.penting {
+  border-left-color: crimson;
+}
+
+.info {
+  background-color: white;
+  margin-top: 0;
+  padding: 0 10px 10px 18px;
+  font-size: 11px;
+  font-weight: normal;
+  color: gray;
+}
+
+.pengumum,
+.tanggal {
+  color: teal;
+  font-weight: bold;
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+p span {
+  background-color: yellow;
+}
